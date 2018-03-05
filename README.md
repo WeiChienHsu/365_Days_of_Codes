@@ -33,7 +33,7 @@
 
 |  #  |      Title     |   Solutions   | Time          | Space         | Difficulty  | 
 |-----|----------------|---------------|---------------|---------------|-------------|
-|001|[Two Sum](https://leetcode.com/problems/rotated-digits/)|[Solution](https://github.com/WeiChienHsu/Java_Practice/tree/master/001_two_Sum) | O(n*m) | O(1) | |Easy|
+|001|[Two Sum](https://leetcode.com/problems/rotated-digits/)|[Solution](https://github.com/WeiChienHsu/Java_Practice/tree/master/001_two_Sum) | O(n*m) | O(1)|Easy|
 
 
 ## March Learning Path Record
