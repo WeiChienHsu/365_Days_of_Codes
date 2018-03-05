@@ -14,8 +14,7 @@
 |Nov. |Yelp Camp |Web Developer BootCamp (MEAN) |MongoDB / Express / NodeJS / Auth / RESTful API | 
 ||COJ Porject| Angular Fronend Project| AngularJS / ES5 /  NodeJs / Express / Passport|
 |Dec.| COJ Porject|MEAN Stack Personal Project |Docker / Redis / Python(Flask) / WebSocket |
-||Udemy|Complete Java Masterclass  |Java OOP Principles (Inheritance/ Interface / Encapsulation / Static & No-Static)
- | 
+||Udemy|Complete Java Masterclass  |Java OOP Principles (Inheritance/ Interface / Encapsulation / Static & No-Static)| 
 |Jan.|Book | Head First Java (Chpter 1 - 9)| Same as Above| 
 ||LeetCode | Solving Leetcode Problems|Leetcode(76) | 
 ||NEWS_Push_Project |React Frontend + NodeJS Webserver Project (with Web scrawler) |React / ES6 / News API / MessageQueue / TF-IDF / SOA Design | 
