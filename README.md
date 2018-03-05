@@ -49,9 +49,10 @@
 - [x] Learn basic Python
 - [x] Learn basic Java
 - [x] Learn basic JavaScript
+- [x] Learn MySQL
 - [x] Learn HTML / CSS / jQuery / Ajax
 - [x] Learn Fundamental Data Structure and Algorithm (Coursera)
-- [x] Finish <<Head First Java>>
+- [x] Finish < Head First Java >
 - [x] Self-Taught MEAN Stack Web Development 
 - [x] Solved 100+ Leetcode Problems
 - [x] Enroll into Oregon State University Post-Bac Computer Science Degree :racehorse:
