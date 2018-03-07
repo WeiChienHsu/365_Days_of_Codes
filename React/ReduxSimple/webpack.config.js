@@ -2,7 +2,8 @@ module.exports = {
   entry: [
     './src/index.js',
     './src/welcome.js',
-    './src/comment.js'
+    './src/comment.js',
+    './src/comments.js'
   ],
   output: {
     path: __dirname,

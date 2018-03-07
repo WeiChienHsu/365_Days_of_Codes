@@ -17,7 +17,6 @@ class App extends React.Component {
       </div>
     );
   }
-
 }
 
 ReactDOM.render(
