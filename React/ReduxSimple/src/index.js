@@ -1,13 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-// Create a New Component. 
-// This Component should produce some HTML.
+function tick() {
+  var element = (
+    <div>
+      <h1>Hello, World</h1>
+      <h2> It is {new Date().toLocaleTimeString()}</h2>
+    </div>  
+  )
 
-const App = () => {
-  return <div> Hi! </div>;
+  ReactDOM.render(element, document.querySelector(".container"));
 }
 
-// Take this component's grnerated HTML 
-// and put it on the page(in the DOM)
-ReactDOM.render(<App/>, document.querySelector('.container'));
+setInterval(tick, 1000);
