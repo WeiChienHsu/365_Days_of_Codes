@@ -40,8 +40,6 @@ class Comment extends React.Component{
       </div>
     );
   }
-
-
 }
 
 function formatDate(date) {
