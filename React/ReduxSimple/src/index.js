@@ -11,6 +11,7 @@ class App extends React.Component{
       <div>
         <SearchBar/>
         <Toggle/>
+        <div id = "login"> </div>
       </div>
     );
   }

@@ -1,6 +1,7 @@
 module.exports = {
   entry: [
-    './src/index.js'
+    './src/index.js',
+    './src/conditionalRender/login.js'
   ],
   output: {
     path: __dirname,
