@@ -10,11 +10,12 @@ class SearchBar extends Component{
 
   render() {
     return(
-      <div>
-      <input 
+      <div className="form-group">
+      <input
+        className = "form-control" 
         value = {this.state.term}
         onChange = {event => this.setState({term : event.target.value})} />
-      <button onClick = {this.showWord}> Click me! </button>
+      <button className = "btn btn-warning form-control" onClick = {this.showWord}> Search </button>
       </div>
     )
   }
