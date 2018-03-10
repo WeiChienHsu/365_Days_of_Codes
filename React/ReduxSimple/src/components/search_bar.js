@@ -21,7 +21,7 @@ class SearchBar extends Component{
 
   showWord() {
     const new_words = this.state.term;
-    console.log(new_words);
+    console.log(new_words); 
   }
 
 }
