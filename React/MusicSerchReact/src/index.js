@@ -10,10 +10,17 @@ const API_KEY = "AIzaSyBJStuWHujWCV9kTWgYUy3YOL87Ea0YtQc";
 class App extends React.Component{
   constructor(props) {
     super(props);
-    this.state = { videos : []};
-    // Contents lists of Videos
+    this.state = { 
+      videos : [],
+      selectedVideo: null 
+    };
+
+    // Contents lists of Videos and setup Default video
     YTSearch({key: API_KEY, term: '徐嘉謙'}, videos => {
-      this.setState({ videos }) // videos : videos 
+      this.setState({ 
+        videos: videos, 
+        selectedVideo: videos[0]
+      })  
     });
   }
 
@@ -21,7 +28,7 @@ class App extends React.Component{
     return(
       <div>
         <SearchBar/>
-        <VideoDetail video = {this.state.videos[0]}/>
+        <VideoDetail video = {this.state.selectedVideo}/>
         <VideoList videos = {this.state.videos}/>
 
       </div>
