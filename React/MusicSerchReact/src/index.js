@@ -5,6 +5,9 @@ import SearchBar from './components/search_bar';
 import VideoList from './components/video_list';
 import VideoDetail from './components/vedio_detail';
 
+// Throttling
+import _ from 'lodash';
+
 const API_KEY = "AIzaSyBJStuWHujWCV9kTWgYUy3YOL87Ea0YtQc";
 
 class App extends React.Component{
@@ -28,10 +31,14 @@ class App extends React.Component{
   }
 
   render() {
+    const videoSearch = _.debounce((term) => { this.videoSearch(term)}, 300);
+
+
+
     return(
       <div>
         <SearchBar 
-        onSearchTermChange = {term => this.videoSearch(term)}/>
+        onSearchTermChange = {videoSearch}/>
         <VideoDetail video = {this.state.selectedVideo}/>
         <VideoList 
         onVideoSelect = {selectedVideo => this.setState({selectedVideo : selectedVideo}) }

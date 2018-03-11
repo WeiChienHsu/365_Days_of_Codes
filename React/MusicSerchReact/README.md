@@ -1,6 +1,6 @@
 # VideoSelect React App
+![Demo](https://imgflip.com/gif/2657li)
 ![Structure](./structure.png)
-
 
 ## Index (App) - stateful 
 
@@ -107,3 +107,17 @@ const VideoListItem = ({video, onVideoSelect}) => {
  ```
 
  ## How to delay the Result when we're typing (Throttling)
+
+- lodash npm library
+```js
+import _ from 'lodash';
+```
+- debounce: get a new value and call this function every 300 ms
+```js
+ const videoSearch = _.debounce((term) => { this.videoSearch(term)}, 300);
+ ```
+ - Change the passed value of onSerachTermChange function
+ ```js
+    <SearchBar 
+  onSearchTermChange = {videoSearch}/>
+```
