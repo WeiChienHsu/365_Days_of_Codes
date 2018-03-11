@@ -2,20 +2,87 @@
 ![Demo](./demo.gif)
 ![Structure](./structure.png)
 
-## Index (App) - stateful 
+- 1. Grab Video Lists From Youtube API.
+- 2. Selected Video from page and show it on the top of the page.
+- 3. Type in texts to seach.
 
+## Index (App) - stateful 
+- State: 1. Lists of Vidoes 2. selected Vudeo
+- videoSearch() finction: to change the by YTSearch Api call
+- Send onSearchTermChange function into <SearchBar>
+- Send onVideoSelect function into <VideoList> 
+- Send selectedVideo state as props into <VideoDetail>
 
 ## SearchBar - stateful
-
+- State: 1. the Term of users typed 2. onTnputChange recorded while user's typing
+- term : pass contents into value in input (get value from props.target.value)
+- onChange: pass value to onSearchTermChange to App
 
 ## VidoeList - stateless
+- To get onVideoSelect function and videos(list of videos) as props from App
+- Used map insteads of for loop to implement conditional render
+- Pass vidoe an onVideoSelect function and one of the video(by map) to VideoListItem
 
+```js
+  const videoItems = props.videos.map(video => {
+    return (
+    <VideoListItem 
+      onVideoSelect = {props.onVideoSelect} 
+      key = {video.etag}  
+      video = {video} />
+    )
+  });
+```
+- Retrun the format of ul and li 
+```js
+  return(
+    <ul className = "col-md-8 col-lg-4  list-group" >
+      {videoItems}
+    </ul>
+  );
+}
+```
 
 ## VidoeListItem - stateless
+- To get onVideoSelect function and specific video as props from VideoList
+- Track the Click from user and triger the onVideoSelect function
+- Get the imgUrl and description from video(by using youtube api)
 
+
+
+```js
+const VideoListItem = ({video, onVideoSelect}) => {
+  const imgUrl = video.snippet.thumbnails.default.url;
+  return(
+    <li onClick = {() => onVideoSelect(video)} className = "list-group-item">
+```
+
+- RECORD THE VIDEO "Key" (Which is quite important in the future) to recognize single one of the video instead of rending all the vidoes when we changed a specific one
+
+```js
+<VideoListItem 
+      onVideoSelect = {props.onVideoSelect} // Pass to video list item
+      key = {video.etag}  
+      video = {video} />
+```
 
 ## VideoDetail - stateless
+- To get specific video clicked by the user as props from App
+- Give a Url for displaying video from Youtube(embed/videoId)
+```js
+const videoId = video.id.videoId;
+  const url = `https://www.youtube.com/embed/${videoId}`;
+```
 
+#### Handling the NULL props
+- Add a check in children component to make sure it has been provided in the props before it attempts to render
+```js
+  if(!video) {
+    return <div> Loading .... </div>
+  }
+```
+
+***
 
 ## How to Update Selected Video
 #### APP
