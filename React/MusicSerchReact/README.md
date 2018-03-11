@@ -5,7 +5,7 @@
 ## Index (App) - stateful 
 
 
-## SearchBar - stateless
+## SearchBar - stateful
 
 
 ## VidoeList - stateless
@@ -69,3 +69,41 @@ const VideoListItem = ({video, onVideoSelect}) => {
 ```
 
 ## How to Connect SearchBar and App(with otehrs Components)
+
+- Move YTSearch to an independent videoSearch() function
+```js
+  videoSearch(term) {
+    YTSearch({key: API_KEY, term: term}, videos => {
+      this.setState({ 
+        videos: videos, 
+        selectedVideo: videos[0]
+      })  
+    });
+  }
+```
+- Still need to init the videoSearch in the constructor
+
+```js
+ this.videoSearch('徐嘉謙');
+```
+
+- Pass a function into SearchBar
+```js
+<SearchBar 
+        onSearchTermChange = {term => this.videoSearch(term)}/>
+```
+
+- In SerachBar : build a onInputChange function and give a onChange attribute in input tag to trigger onInputChnage() with event.target.value
+```js
+ onChange = {event => this.onInputChange(event.target.value))} />
+ ```
+
+ - onInputChange funciton: 1. set the state with the term and call the cal back that we got from App
+ ```js
+  onInputChange(term) {
+    this.setState({ term });
+    this.props.onSearchTermChange(term);
+  }
+ ```
+
+ ## How to delay the Result when we're typing (Throttling)

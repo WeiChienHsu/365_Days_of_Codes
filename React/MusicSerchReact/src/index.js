@@ -15,8 +15,11 @@ class App extends React.Component{
       selectedVideo: null 
     };
 
-    // Contents lists of Videos and setup Default video
-    YTSearch({key: API_KEY, term: '徐嘉謙'}, videos => {
+    this.videoSearch('徐嘉謙');
+  }
+
+  videoSearch(term) {
+    YTSearch({key: API_KEY, term: term}, videos => {
       this.setState({ 
         videos: videos, 
         selectedVideo: videos[0]
@@ -27,7 +30,8 @@ class App extends React.Component{
   render() {
     return(
       <div>
-        <SearchBar/>
+        <SearchBar 
+        onSearchTermChange = {term => this.videoSearch(term)}/>
         <VideoDetail video = {this.state.selectedVideo}/>
         <VideoList 
         onVideoSelect = {selectedVideo => this.setState({selectedVideo : selectedVideo}) }
