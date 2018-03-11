@@ -29,7 +29,10 @@ class App extends React.Component{
       <div>
         <SearchBar/>
         <VideoDetail video = {this.state.selectedVideo}/>
-        <VideoList videos = {this.state.videos}/>
+        <VideoList 
+        onVideoSelect = {selectedVideo => this.setState({selectedVideo : selectedVideo}) }
+        // Pass onVideoSelect as property into VideoList
+        videos = {this.state.videos}/>
 
       </div>
     );
