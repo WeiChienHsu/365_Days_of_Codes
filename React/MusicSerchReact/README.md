@@ -1,6 +1,5 @@
 # VideoSelect React App
-<a href="https://imgflip.com/gif/2657li"><img src="https://i.imgflip.com/2657li.gif" title="made at imgflip.com"/></a>
-
+![Demo](./demo.gif)
 ![Structure](./structure.png)
 
 ## Index (App) - stateful 
