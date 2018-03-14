@@ -89,3 +89,7 @@
 
 
 ## March Learning Path Record
+- [Build a Chat App With MongoDB & Socket.io](https://www.youtube.com/watch?v=hrRue5Rt6Is)
+- [Node.js Login System With Passport](https://www.youtube.com/watch?v=Z1ktxiqyiLA)
+- [React/Flux/Redux(中文)](https://www.zhihu.com/question/47686258)
+- [Morden React and Redux(Udemy)](https://www.udemy.com/react-redux/l)
