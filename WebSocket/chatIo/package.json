@@ -1,0 +1,23 @@
+{
+  "name": "chatapp.io",
+  "version": "1.0.0",
+  "description": "Simple chat app using sockets",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WeiChienHsu/chatApp.io.git"
+  },
+  "author": "Kevin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WeiChienHsu/chatApp.io/issues"
+  },
+  "homepage": "https://github.com/WeiChienHsu/chatApp.io#readme",
+  "dependencies": {
+    "mongodb": "^3.0.4",
+    "socket.io": "^2.0.4"
+  }
+}
