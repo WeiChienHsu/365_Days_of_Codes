@@ -1,0 +1,79 @@
+.col{
+	background-color: lightgray;
+	text-align: center;
+	margin-left: 100px;
+	margin-right: 100px;
+	border-radius: 20px;
+}
+
+div>img.wade-photo {
+	box-sizing: border-box;
+	margin-top:100px ;
+	border:2px black solid;
+	padding: 0;
+}
+h2{
+	font-size: 50px;
+}
+
+div.aboutWade{
+	display: block;
+	margin-left: 600px;
+	margin-right: 600px;
+	text-align: left;
+	line-height: 30px;
+	font-size: 25px;
+}
+
+div.aboutWade::first-letter{
+	font-size: 30px;
+}
+
+div.talk{
+	display: block;
+	margin-left: 230px;
+	margin-right: 230px;
+	text-align: left;
+	line-height: 60px;
+	font-size: 28px;
+	font-weight: 10px;
+}
+
+
+.wadeStory{
+    display: block;
+    text-align: left;
+	padding-bottom: 100px;
+	margin-left: 400px;
+	margin-right: 400px;
+	margin-top: 20px;
+	
+}
+
+div.wadeStory>ul>li{
+	font-size: 24px;
+	margin-top: 20px;
+	line-height: 40px;
+}
+div.wadeStory>ul>li::first-letter{
+	font-size: 30px;
+	font-size: bold;
+}
+
+a{
+	font-size: 30px;
+	text-decoration: none;
+}
+
+a:hover{
+	color: red;
+}
+
+.source{
+	text-align: center;
+}
+.wadeHighLight{
+	padding-bottom: 40px;
+	color: gray;
+
+}

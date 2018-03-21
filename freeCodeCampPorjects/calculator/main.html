@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Calculator</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+	<link rel="stylesheet" href="css/cal.css">
+	<script rel="text/javascript" src="js/lib/jquery-3.2.1.min.js"></script>
+
+</head>
+
+<body>
+  <div>
+    <h1>Javascript Calculator</h1>
+  </div>
+  <div class="calc-container">
+    <div class="output-display">
+        <span id="delete" class="clear-btn operator ">C</span>
+      <div class="screen">
+        <div id="steps" class="output">0
+        </div>
+      </div>
+    </div>
+   
+    <div class="buttons">
+      <div class="row">
+          <span id="7" class="input-btn numeric">7</span>
+          <span id="8" class="input-btn numeric">8</span>
+          <span id="9" class="input-btn numeric">9</span>
+          <span id="/" class="input-btn operator">&divide</span>
+      </div>
+      <div class="row">
+          <span id="4" class="input-btn numeric">4</span>
+          <span id="5" class="input-btn numeric">5</span>
+          <span id="6" class="input-btn numeric">6</span>
+          <span id="*" class="input-btn operator">x</span>
+      </div>
+      <div class="row">
+          <span id="1" class="input-btn numeric">1</span>
+          <span id="2" class="input-btn numeric">2</span>
+          <span id="3" class="input-btn numeric">3</span>
+          <span id="-" class="input-btn operator">-</span>
+      </div>
+      <div class="row">
+          <span id="0" class="input-btn numeric">0</span>
+          <span id="-1" class="input-btn numeric">.</span>
+          <span id="total" class="input-btn numeric">=</span>
+          <span id="+" class="input-btn opeartor">+</span>
+      </div>
+    </div>
+  </div>
+ 	 <script src="js/cal.js"></script>
+</body>
+
+</html>

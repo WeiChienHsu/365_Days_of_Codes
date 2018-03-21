@@ -1,0 +1,23 @@
+.status{
+	background-color: #E7E7E8;
+	border-radius: 15px;
+	background: rgba(231, 231, 232, 0.9);
+	padding-left: 50px;
+	height: 400px;
+}
+
+img{
+	width: 200px;
+	border-radius: 5px;
+	padding-top: 20px;
+}
+
+h4{
+	font-size: 30px;
+	margin-top: 10px;
+}
+
+#description{
+	font-size: 20px;
+}
+

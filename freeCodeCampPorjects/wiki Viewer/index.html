@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>wiki Viewer</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+	<link rel="stylesheet" href="css/wiki.css">
+	<script rel="text/javascript" src="js/lib/jquery-3.2.1.min.js"></script>
+
+</head>
+<body>
+
+ <nav class="navbar navbar-default navbar-fixed-top ">
+    <div class="container"> 
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button> 
+        <!-- make a hamburger botton -->
+        <a href="#" class="navbar-brand">Wiki Viewer</a>
+      </div>
+     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+     <!-- Hide the part included in collapse -->
+       <ul class="nav navbar-nav">
+         <li><a href="">About us</a></li>
+         <li><a href="">Searching Record</a></li>
+       </ul>
+       <ul class="nav navbar-nav navbar-right">
+          <li> <a href="">Log in</a></li>
+          <li> <a href="">Sign up</a> </li>
+       </ul>
+      </div>  
+    </div>
+  </nav>
+
+
+<div class="contain">
+
+	<!-- search bar -->
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-12 xol-lg-12">
+		<div class="page-header text-center" id="header">
+		<h1>WikiViewer</h1>
+		</div>
+		</div>
+		<div class="clearfix visible-xs-block visible-sm-block visible-md-block visible-lg-block"></div>
+		</div>
+	<!-- input bar -->
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"> 
+		<div class="box">
+		
+		<input type="text" class placeholder=" Search ... " id="search">
+		<div class="message text-center"></div>
+
+		</div>
+		</div>
+		<div class="clearfix visible-xs-block visible-sm-block visible-md-block visible-lg-block"></div>
+	</div>
+
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<div class="box text-center">
+			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 but-search">
+			<button class="btn btn-lg btn-wiki" id="searchbtn">
+			<i class="fa fa-1.5x fa-search"></i> &nbsp; Search
+			</button>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 but-random">
+			<button onclick="window.open('https://en.wikipedia.org/wiki/Special:Random')" class="btn btn-lg btn-wiki" id="randomize">
+			<i class="fa fa-1.5x fa-random"></i> &nbsp; Random
+			<!--  -->
+			</button>
+			</div>
+		<div class="clearfix visible-xs-block visible-sm-block visible-md-block visible-lg-block"></div>
+		</div>
+		</div> 
+	</div>
+
+	<div id="row">
+	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+	<div id="resultBox"></div>
+	</div>
+	</div>
+
+</div>
+
+
+<script src="js/wiki.js"></script>	
+</body>
+</html>

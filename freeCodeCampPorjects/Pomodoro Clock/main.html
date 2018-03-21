@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Timer</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/clock.css">
+	<script rel="text/javascript" src="js/lib/jquery-3.2.1.min.js"></script>
+</head>
+
+<body>
+<h1> Pomodoro Clock</h1>
+  <div id="timeChoice">
+<!-- break Time -->
+   <div id="breakTime">
+	 <div>
+		<h2>Break Length</h2>
+	 </div>
+	 <div id="breakTimeChoice">
+		<button id="breakMinus"> - </button>
+		<p id="breakDisplay"> 5 </p>
+		<button id="breakPlus"> + </button>
+	 </div>	
+   </div> 
+<!-- session Time -->
+  <div id="sessionTime">
+	<div>
+		<h2>Session Length</h2>
+	</div>
+	<div id="sessionTimeChoice">
+		<button id="sessionMinus"> - </button>
+		<p id="sessionDisplay"> 25 </p>
+		<button id="sessionPlus"> + </button>
+	</div>	
+  </div>
+	<!-- Start and Reset -->
+</div>
+
+	<div id="status">
+		<button id="start">Start</button>
+	</div>
+	<div id="time">
+	<div id="timeDisplay">
+		<h3 class="displayTitle">Session</h3>
+		<p class="displayTime"> 25 </p>
+	</div>
+	</div>
+ <script src="js/clock.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+body{
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://gj-wes.github.io/codepen/FCC_WikiApp/images/books_bg.jpg') no-repeat center fixed;
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://gj-wes.github.io/codepen/FCC_WikiApp/images/books_bg.jpg') no-repeat center fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://gj-wes.github.io/codepen/FCC_WikiApp/images/books_bg.jpg') no-repeat center fixed;
+  background-size: cover;
+}
+
+h1{
+	color:white;
+	font-size: 60px;
+
+}
+
+.contain{
+	margin-top: 50px;
+	font-size: 30px;
+}
+
+.message{
+	color:white;
+}
+
+input{
+	margin-bottom: 20px;
+	width: 70%;
+	height: 50px;
+	border-radius: 5px;
+	font-size: 30px;
+	border:1px black solid;
+	padding-left: 50px;
+}
+
+.box{
+	text-align: center;
+}
+
+.btn-wiki{
+	width:70%;
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+
+h4{
+	font-size: 30px;
+	font-weight: bold;
+}
+
+#result{
+	margin-top: 10px;
+	background-color: #E7E7E8;
+	padding: 10px 20px;
+	border-radius: 15px;
+	background: rgba(231, 231, 232, 0.9);
+}
+
+#result:hover{
+	border-left: 5px solid orange;
+    margin-left: -5px;
+    background-color:#E7E7E8;
+}
+
+.btn-wiki:hover{
+	border-left: 5px solid orange;
+	border-right: 5px solid orange;
+	margin-left: -5px;
+}
+
+a{
+	text-decoration:none;
+}
+
+

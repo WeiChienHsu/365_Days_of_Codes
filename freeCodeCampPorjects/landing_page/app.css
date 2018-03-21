@@ -1,0 +1,97 @@
+body{
+  background: url(jesse-orrico-72384.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: 'Lato', sans-serif;
+  color:white;
+
+}
+
+html{
+  height:100%;
+}
+
+.sm_back{
+  background-color: rgba(250, 255, 255, 0.5);
+  border-radius: 5px;
+  padding-bottom: 20px;
+  padding-top: 5px;
+}
+
+#content{
+ text-align: center;
+ padding-top: 21%;
+ text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+              0px 8px 13px rgba(0,0,0,0.1),
+              0px 18px 23px black;
+
+}
+
+h1{
+  font-weight: 700;
+  font-size: 5em;
+}
+
+.page_hr{
+  width: 360px;
+  border-top:1px solid #f8f8f8;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+
+#gallery{
+  padding-top:100px; 
+}
+
+.photo_hr{
+  width: 250px;
+  border-top:1px solid #f8f8f8;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+  padding-bottom:0px;	
+}
+
+.thumbnail{
+  height:400px;
+}
+
+.thumbnail a>img, .thumbnail>img{
+ width:auto;
+ height:200px;
+ max-width:100%;
+ max-height:100%;
+}
+
+h2{
+	color: black;
+	text-align: center;
+}
+
+p{
+    color: black;
+    text-align: left;
+    padding-left: 55px;
+    padding-right: 40px;
+    padding-bottom: 10px;	
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    line-height:20px;
+    font-size: 14px;
+}
+
+.photo_icon{
+  width: 20px;
+  margin-right:40px;  
+
+}
+
+
+p:first-letter{
+   font-size: 20px;
+}
+
+.photo_feature{
+	position: relative;
+	top:200px;
+	background-color: #e6e7e7;
+}
