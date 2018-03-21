@@ -1,5 +1,5 @@
 # Weather React App
-![Demo5](./image/demo.gif)
+![Demo5](./image/demo5.gif)
 
 ### Getting Started
 Checkout this repo, install dependencies, then start the gulp process with the following:
